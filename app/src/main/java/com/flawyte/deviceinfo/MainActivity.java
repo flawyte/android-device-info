@@ -94,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
             str += "\n";
             str += "* ro.boot.serialno = " + get.invoke(c, "ro.boot.serialno", null);
             str += "\n";
+            str += "* ro.build.version.security_patch = " + get.invoke(c, "ro.build.version.security_patch", null);
+            str += "\n";
             str += "* ro.serialno = " + get.invoke(c, "ro.serialno", null);
             str += "\n";
             str += "* sys.serialnumber = " + get.invoke(c, "sys.serialnumber", null);
