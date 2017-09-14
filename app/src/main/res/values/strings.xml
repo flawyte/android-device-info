@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Device Info</string>
+    <string name="copied">Copied!</string>
+    <string name="copy">Copy</string>
+</resources>
