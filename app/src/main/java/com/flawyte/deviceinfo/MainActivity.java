@@ -106,6 +106,10 @@ public class MainActivity extends AppCompatActivity {
             str += e.getMessage();
         }
 
+        str += "\n";
+        str += "\n";
+        str += ">>> Device.getSerialNumber() = " + Device.getSerialNumber();
+
         return str;
     }
 
