@@ -90,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
             Class<?> c = Class.forName("android.os.SystemProperties");
             Method get = c.getMethod("get", String.class, String.class);
 
+            str += "* gsm.sn1 = " + get.invoke(c, "gsm.sn1", null);
+            str += "\n";
             str += "* ril.serialnumber = " + get.invoke(c, "ril.serialnumber", null);
             str += "\n";
             str += "* ro.boot.serialno = " + get.invoke(c, "ro.boot.serialno", null);
